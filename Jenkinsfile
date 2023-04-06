@@ -14,7 +14,7 @@ pipeline {
             }
         }
 
-        /*stage('INTEGRATION TESTING') {
+        stage('INTEGRATION TESTING') {
             steps {
                 sh 'mvn verify -DskipUnitTests'
             }
@@ -26,7 +26,7 @@ pipeline {
             }
         }
 
-      stage('STATIC CODE ANALYSIS') {
+      /*stage('STATIC CODE ANALYSIS') {
             steps {
                 script {
                     withSonarQubeEnv(credentialsId: 'sonarqubetoken') {
